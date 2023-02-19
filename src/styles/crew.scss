@@ -1,0 +1,124 @@
+
+.carousal{
+    height: 100vh;
+}
+.crew{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    gap: 100px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    padding: 5rem;
+    background: url('../assets//crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    .crewInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 200px;
+
+        .title{
+            p{
+                font-size: 2rem;
+                color: white;
+            }
+        }
+
+        .para{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            color: white;
+
+            h1{
+                font-size: 3.5rem;
+                margin: 20px 0px;
+            }
+            p{
+                text-align: left;
+                line-height: 1.7;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .crew{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding:1.5rem;
+        gap: 20px;
+        background: url('../assets//crew/background-crew-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        .crewInfo{
+            gap: 100px;
+           
+            .title{
+                display: none;
+            }
+
+            .para{
+                align-items: center;
+
+                h1{
+                    text-align: center;
+                    font-size: 1.8rem;
+                    margin: 10px 0;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
+      
+    }
+}
+
+@media screen and (max-width:450px){
+    .crew{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding:1.5rem;
+        gap: 20px;
+        background: url('../assets//crew/background-crew-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        .crewInfo{
+            gap: 100px;
+           
+            .title{
+                display: none;
+            }
+
+            .para{
+                align-items: center;
+
+                h1{
+                    text-align: center;
+                    font-size: 1.8rem;
+                    margin: 10px 0;
+                }
+                p{
+                    text-align: center;
+                }
+            }
+        }
+      
+    }
+}

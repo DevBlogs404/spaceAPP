@@ -1,0 +1,124 @@
+.destination{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 100px;
+    padding: 4rem;
+    background: url('../assets/destination/background-destination-desktop.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    .photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        h2{
+            color: white;
+        }
+        img{
+            padding: 2rem;
+          width: 90%;
+        }
+        
+    }
+
+    .destination-info{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .places{
+            display: flex;
+            gap: 20px;
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    border-bottom: 1px solid white;
+                }
+            }
+        }
+    }
+
+    .heading{
+color: white;
+border-bottom: 2px solid gray;
+h1{
+    font-size: 5rem;
+}
+p{
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+    }
+  
+    .time{
+        color: white;
+        display: flex;
+        gap: 100px;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+    }
+   
+}
+
+@media screen and (max-width:800px){
+    .destination{
+        grid-template-columns: 1fr;
+        padding: 3.5rem;
+        gap: 20px;
+        background: url('../assets/destination/background-destination-tablet.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        .photo{
+            img{
+                padding: 0;
+            }
+            
+        }
+
+    
+        .heading{
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+        }
+
+        .time{
+            gap: 50px;
+            div{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+        }
+      
+        
+    }
+}
+
+
+@media screen and (max-width:450px){
+    .destination{
+        grid-template-columns: 1fr;
+        background: url('../assets/destination/background-destination-mobile.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
